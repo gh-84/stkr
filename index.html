@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страхование с Кристиной Толстиковой | Ваш надёжный агент</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Кристина Толстикова — страховой агент</h1>
+            <p>Защищаю то, что вам дорого</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul>
+                <li><a href="#auto">Автострахование</a></li>
+                <li><a href="#realty">Недвижимость</a></li>
+                <li><a href="#health">Жизнь и здоровье</a></li>
+                <li><a href="#travel">Путешествия</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <section id="auto" class="section">
+            <div class="container">
+                <h2>Автострахование</h2>
+                <p>ОСАГО, КАСКО, страхование от ДТП и угона. Подберу оптимальный тариф под ваш автомобиль.</p>
+                <button class="btn" onclick="showForm('auto-form')">Рассчитать стоимость</button>
+                <div id="auto-form" class="form-popup">
+                    <form>
+                        <h3>Заявка на автострахование</h3>
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Модель и год авто, желаемые опции"></textarea>
+                        <button type="submit" class="btn">Отправить заявку</button>
+                        <button type="button" onclick="hideForm('auto-form')" class="btn btn-secondary">Закрыть</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="realty" class="section">
+            <div class="container">
+                <h2>Страхование недвижимости</h2>
+                <p>Защита дома, квартиры, гаража от пожара, затопления, стихийных бедствий и противоправных действий.</p>
+                <button class="btn" onclick="showForm('realty-form')">Получить консультацию</button>
+                <div id="realty-form" class="form-popup">
+                    <form>
+                        <h3>Заявка на страхование недвижимости</h3>
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Тип объекта, адрес, желаемая сумма покрытия"></textarea>
+                        <button type="submit" class="btn">Отправить заявку</button>
+                        <button type="button" onclick="hideForm('realty-form')" class="btn btn-secondary">Закрыть</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="health" class="section">
+            <div class="container">
+                <h2>Страхование жизни и здоровья</h2>
+                <p>Медицинская страховка, защита от несчастных случаев, накопительное страхование.</p>
+                <button class="btn" onclick="showForm('health-form')">Узнать подробности</button>
+                <div id="health-form" class="form-popup">
+                    <form>
+                        <h3>Заявка на страхование жизни и здоровья</h3>
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Желаемые риски, срок страхования"></textarea>
+                        <button type="submit" class="btn">Отправить заявку</button>
+                        <button type="button" onclick="hideForm('health-form')" class="btn btn-secondary">Закрыть</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="travel" class="section">
+            <div class="container">
+                <h2>Страхование путешествий</h2>
+                <p>Страховка для поездок по России и за границу: медицина, отмена рейса, потеря багажа.</p>
+                <button class="btn" onclick="showForm('travel-form')">Подобрать полис</button>
+                <div id="travel-form" class="form-popup">
+                    <form>
+                        <h3>Заявка на страхование путешествий</h3>
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Направление, даты поездки, количество человек"></textarea>
+                        <button type="submit" class="btn">Отправить заявку</button>
+                        <button type="button" onclick="hideForm('travel-form')" class="btn btn-secondary">Закрыть</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2>Свяжитесь со мной</h2>
+                <p>Готов ответить на ваши вопросы и помочь с выбором страховки.</p>
+
+                <!-- Форма «Задать вопрос» -->
+                <div class="question-form">
+                    <h3>Задать вопрос</h3>
+                    <form>
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Ваш вопрос" required></textarea>
+                        <button type="submit" class="btn">Отправить вопрос</button>
+                    </form>
+                </div>
+
+                <div class="links">
+                    <a href="https://max.ru" target="_blank" class="link link-max">Max</a>
+                    <a href="https://t.me/WoodMist" target="_blank" class="link link-tg">Telegram</a>
+                    <a href="https://yandex.ru/maps/?ll=..." target="_blank" class="link link-yandex">Яндекс Карты</a>
+                    <a href="https://2gis.ru/?center=..." target="_blank" class="link link-2gis">2ГИС</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Кристина Толстикова — страховой агент. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
